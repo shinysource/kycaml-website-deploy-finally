@@ -2,7 +2,7 @@ import axios from 'axios'
 import { User, AuthState, AuthResult, AccessToken } from '../types/types'
 
 const instance = axios.create({
-  baseURL: 'https://finallykycaml-backend.herokuapp.com/api/',
+  baseURL: 'http://localhost:8000/api/',
   timeout: 30000,
 })
 
