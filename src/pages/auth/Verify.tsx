@@ -117,14 +117,12 @@ const Signup = () => {
           >
             <Grid
               item
-              className="lg:!max-w-[1800px]"
               container
               justifyContent="center"
               spacing={2}
               xs={10}
               sm={8}
               md={6}
-              lg={4}
             >
               <Grid item className="text-[32px] font-bold">
                 <div className="font-podium49">WHITELIST</div>
