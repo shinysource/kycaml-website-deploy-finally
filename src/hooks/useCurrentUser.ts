@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 
 export interface User {
   id: number
@@ -19,7 +19,7 @@ const useCurrentUser = () => {
   return {
     user,
     isLogged,
-    logIn
+    logIn,
   }
 }
 

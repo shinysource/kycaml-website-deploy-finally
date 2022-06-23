@@ -1,6 +1,6 @@
 import Button, { ButtonProps } from "@mui/material/Button";
 import { FormGroup } from "@mui/material";
-import { makeStyles, createStyles } from "@mui/styles";
+import { makeStyles } from "@mui/styles";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 
 const useButtonStyles = (fontColor: string, size: string) =>

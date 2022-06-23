@@ -29,7 +29,6 @@ const AuthContext = createContext<State>(gameContextDefaultValues);
 
 export default function AuthProvider({ children }: AuthContextProps) {
   const { user, isLogged, logIn } = useCurrentUser();
-  const [logState, setLogState] = useState<boolean>(false);
 
   return (
     <AuthContext.Provider

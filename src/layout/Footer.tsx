@@ -1,5 +1,4 @@
-import { Grid, Box } from '@mui/material'
-import { Link } from 'react-router-dom'
+import { Grid } from "@mui/material";
 
 const Footer = () => {
   return (
@@ -19,7 +18,7 @@ const Footer = () => {
         </Grid>
       </Grid>
     </Grid>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;
