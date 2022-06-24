@@ -24,12 +24,10 @@ const initialValues: RegisterForm = {
 const Signup = () => {
   const [accessSDKToken, setAccessSDKToken] = useState<string>("");
   const [applicantEmail, setApplicantEmail] = useState<string>("");
-  const [applicantPhone, setApplicantPhone] = useState<string>("");
 
   const config = {
     lang: "en",
     email: applicantEmail,
-    phone: applicantPhone,
     i18n: {
       document: {
         subTitles: {

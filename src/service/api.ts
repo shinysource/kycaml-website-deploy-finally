@@ -1,5 +1,5 @@
 import axios from 'axios'
-import { User, AuthState, AuthResult, AccessToken } from '../types/types'
+import { User, AccessToken } from '../types/types'
 
 const instance = axios.create({
   baseURL: 'https://finallykycaml-server.herokuapp.com/api/',
