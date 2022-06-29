@@ -8,7 +8,10 @@ const instance = axios.create({
 
 const apiService = {
   apply: (externalUserId: User) => instance.post('auth/apply', externalUserId),
-  getStatus: () => instance.get('auth/getStatus'),
+  getStatus: (externalUserId: User) =>
+    instance.post('auth/getStatus', externalUserId),
+  getApplicantId: (externalUserId: User) =>
+    instance.post('auth/getapplicantid', externalUserId),
   createToken: (externalUserId: User) =>
     instance.post<AccessToken>('auth/createtoken', externalUserId),
 }
