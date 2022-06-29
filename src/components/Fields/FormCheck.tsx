@@ -4,48 +4,48 @@ import {
   FormGroup,
   FormControl,
   Typography,
-  FormHelperText
-} from '@mui/material'
-import { makeStyles } from '@mui/styles'
-import { createTheme, ThemeProvider } from '@mui/material/styles'
-import { FormikValues } from 'formik'
-import { ChangeEvent } from 'react'
-import { classNames } from '../../utils/index'
+  FormHelperText,
+} from "@mui/material";
+import { makeStyles } from "@mui/styles";
+import { createTheme, ThemeProvider } from "@mui/material/styles";
+import { FormikValues } from "formik";
+import { ChangeEvent } from "react";
+import { classNames } from "../../utils/index";
 
 const useStyles = makeStyles({
   root: {
-    display: 'flex',
-    alignItems: 'flex-start'
+    display: "flex",
+    alignItems: "flex-start",
   },
   input: {
-    '&': {
-      marginTop: '-8px'
+    "&": {
+      marginTop: "-8px",
     },
-    '&.Mui-checked': {
-      borderColor: '#fff',
-      outlineColor: '#fff'
-    }
+    "&.Mui-checked": {
+      borderColor: "#fff",
+      outlineColor: "#fff",
+    },
   },
   label: {
-    fontFamily: 'Inter',
-    fontSize: '14px',
-    color: '#A6A6A6'
-  }
-})
+    fontFamily: "Inter",
+    fontSize: "14px",
+    color: "#A6A6A6",
+  },
+});
 
 const theme = createTheme({
   palette: {
-    mode: 'dark'
-  }
-})
+    mode: "light",
+  },
+});
 
 interface FormCheckProps {
-  name: string
-  className?: string
-  label?: React.ReactNode
-  handleChange?: (evt: ChangeEvent<HTMLInputElement>) => void
-  formik: FormikValues
-  isHint?: boolean
+  name: string;
+  className?: string;
+  label?: React.ReactNode;
+  handleChange?: (evt: ChangeEvent<HTMLInputElement>) => void;
+  formik: FormikValues;
+  isHint?: boolean;
 }
 
 const FormCheck = ({
@@ -54,9 +54,9 @@ const FormCheck = ({
   className,
   handleChange,
   formik,
-  isHint
+  isHint,
 }: FormCheckProps) => {
-  const classes = useStyles()
+  const classes = useStyles();
 
   return (
     <ThemeProvider theme={theme}>
@@ -64,7 +64,7 @@ const FormCheck = ({
         error={isHint && formik.touched[name] && !!formik.errors[name]}
       >
         {isHint && formik.touched[name] && formik.errors[name] && (
-          <FormHelperText sx={{ marginLeft: '0px' }}>
+          <FormHelperText sx={{ marginLeft: "0px" }}>
             {formik.errors[name]}
           </FormHelperText>
         )}
@@ -86,7 +86,7 @@ const FormCheck = ({
         </FormGroup>
       </FormControl>
     </ThemeProvider>
-  )
-}
+  );
+};
 
-export default FormCheck
+export default FormCheck;
