@@ -26,19 +26,19 @@ body * {
 }
 
 .home-back {
-  @apply min-h-screen bg-no-repeat bg-cover bg-center overflow-auto bg-yellow;
+  @apply min-h-screen bg-no-repeat bg-cover bg-center overflow-auto bg-white;
 }
 
 .hero-text {
-  @apply font-podium96 font-normal text-4xl leading-[36px] lg:font-medium lg:text-5xl lg:leading-[48px];
+  @apply font-podium96 font-normal text-3xl leading-[36px] md:font-medium md:text-4xl lg:leading-[48px] xl:text-5xl;
 }
 
 .summary-text {
-  @apply font-normal text-xl leading-[28px] lg:text-[30px] lg:leading-[36px];
+  @apply font-medium text-2xl leading-[44px] lg:text-[30px] lg:leading-[50px];
 }
 
 .h2-text {
-  @apply font-podium49 font-bold text-2xl leading-[24px] lg:text-4xl lg:leading-[36px] lg:text-[42px] lg:leading-[52px];
+  @apply font-podium49 font-bold text-2xl leading-[24px] lg:text-4xl lg:text-[42px] lg:leading-[52px];
 }
 
 .paragraph-text {
