@@ -18,6 +18,7 @@ module.exports = {
       },
       fontFamily: {
         inter: "Inter",
+        arial: "Arial",
         podium49: "PODIUMSharp-49",
         podium96: "PODIUMSharp-96",
       },

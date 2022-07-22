@@ -18,7 +18,7 @@
 @tailwind utilities;
 
 body * {
-  @apply font-inter;
+  @apply font-arial;
 }
 
 .signup-back {
@@ -26,19 +26,19 @@ body * {
 }
 
 .home-back {
-  @apply min-h-screen bg-no-repeat bg-cover bg-center overflow-auto bg-white;
+  @apply min-h-screen bg-no-repeat bg-cover bg-center overflow-auto bg-yellow;
 }
 
 .hero-text {
-  @apply font-podium96 font-normal text-3xl leading-[36px] md:font-medium md:text-4xl lg:leading-[48px] xl:text-5xl;
+  @apply font-arial font-normal text-4xl leading-[36px] md:font-medium md:text-5xl lg:leading-[48px] xl:text-5xl;
 }
 
 .summary-text {
-  @apply font-medium text-2xl leading-[44px] lg:text-[30px] lg:leading-[50px];
+  @apply text-2xl smd:font-medium smd:text-2xl smd:leading-[44px] lg:text-[30px] lg:leading-[50px];
 }
 
 .h2-text {
-  @apply font-podium49 font-bold text-2xl leading-[24px] lg:text-4xl lg:text-[42px] lg:leading-[52px];
+  @apply font-arial font-bold text-2xl leading-[24px] lg:text-4xl lg:text-[42px] lg:leading-[52px];
 }
 
 .paragraph-text {
@@ -50,15 +50,15 @@ body * {
 }
 
 .h1-text {
-  @apply font-podium49 font-bold text-[42px] leading-[44px] lg:text-[64px] lg:leading-[60px] lg:text-[80px] lg:leading-[72px];
+  @apply font-arial font-bold text-[42px] leading-[44px] lg:text-[64px] lg:leading-[60px] lg:text-[80px] lg:leading-[72px];
 }
 
 .h3-text {
-  @apply font-podium49 font-bold text-[18px] leading-6 lg:text-2xl lg:leading-8;
+  @apply font-arial font-bold text-[18px] leading-6 lg:text-2xl lg:leading-8;
 }
 
 .card-title {
-  @apply uppercase font-podium49 font-normal text-2xl lg:text-4xl;
+  @apply uppercase font-arial font-normal text-2xl lg:text-4xl;
 }
 
 .paragraph-text {
@@ -70,7 +70,7 @@ body * {
 }
 
 .modal-title {
-  @apply uppercase font-podium49 font-normal text-[32px] leading-8;
+  @apply uppercase font-arial font-normal text-[32px] leading-8;
 }
 
 .text-animate-content {

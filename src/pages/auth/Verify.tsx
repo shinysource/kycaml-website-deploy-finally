@@ -134,7 +134,7 @@ const Signup = () => {
           <form
             method="POST"
             onSubmit={onSubmit}
-            className="flex justify-center mt-20"
+            className="flex justify-center"
           >
             <Grid
               item
@@ -147,12 +147,9 @@ const Signup = () => {
               lg={4}
             >
               <Grid item className="text-[32px] font-bold">
-                <div className="font-podium49">Let's Get You Verified!</div>
+                <div className="font-arial">Let's Get You Verified!</div>
               </Grid>
               <Grid item className="text-base font-normal text-center" xs={12}>
-                <p className="mb-[8px]">
-                  Know Your Customer/Anti Money Laundering check with SumSub
-                </p>
                 <p className="mb-[8px]">
                   Please confirm below that you agree to allow us to process
                   your personal data to do the KYC/AML check.
@@ -171,6 +168,7 @@ const Signup = () => {
                   isHint={true}
                 />
               </Grid>
+
               <Grid item xs={12}>
                 <FormCheck
                   name="acceptTerms"
@@ -184,6 +182,20 @@ const Signup = () => {
                         </span>
                         ), and that they are not expired.
                       </p>
+                      <span>Accept </span>
+                      <a
+                        href="https://app.termly.io/document/terms-of-use-for-website/41084311-1764-4bc0-92fc-3ca80b0966ba"
+                        className="underline"
+                      >
+                        <span className="font-bold">Terms of Use</span>
+                      </a>
+                      <span> and </span>
+                      <a
+                        href="https://app.termly.io/document/terms-of-use-for-website/41084311-1764-4bc0-92fc-3ca80b0966ba"
+                        className="underline"
+                      >
+                        <span className="font-bold">Privacy Policy</span>
+                      </a>
                     </div>
                   }
                   formik={formik}
@@ -198,7 +210,7 @@ const Signup = () => {
                   type="submit"
                   model="primary"
                   variant="contained"
-                  label="verify your identity"
+                  label="Let's get started"
                 />
               </Grid>
             </Grid>
