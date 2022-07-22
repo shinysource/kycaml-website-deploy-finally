@@ -185,6 +185,7 @@ const Signup = () => {
                       <span>Accept </span>
                       <a
                         href="https://app.termly.io/document/terms-of-use-for-website/41084311-1764-4bc0-92fc-3ca80b0966ba"
+                        target="_blank"
                         className="underline"
                       >
                         <span className="font-bold">Terms of Use</span>
@@ -192,6 +193,7 @@ const Signup = () => {
                       <span> and </span>
                       <a
                         href="https://app.termly.io/document/terms-of-use-for-website/41084311-1764-4bc0-92fc-3ca80b0966ba"
+                        target="_blank"
                         className="underline"
                       >
                         <span className="font-bold">Privacy Policy</span>
